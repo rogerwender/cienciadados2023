@@ -14,9 +14,15 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='reset.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='flexbox.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='novo.css') }}">
         <title>Roger's Page</title>
         <link rel="shortcut icon" href="{{ url_for('static', filename='img/Favicon.png') }}" type="image/x-icon">
 
+        <!-- Scripts do menu lateral -->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      
     </head>
 <body>
     <header>
@@ -52,81 +58,80 @@
         </nav>
     </header>
 
-           <!-- Menu lateral -->
+    <!-- Menu lateral --> 
+    <aside class="menu__container">
+        <ul class="menu__lista">
+            <li>
+                <a class="menu__itens" href="#">
+                    <i class="icone__inicio icone-item"></i>
+                    <span>Início</span></a>
+            </li>
 
-           <aside class="menu__container">
-            <ul class="menu__lista">
-                <li>
-                    <a class="menu__itens" href="#">
-                        <i class="icone__inicio icone-item"></i>
-                        <span>Início</span></a>
-                </li>
-    
-                <li>
-                    <a class="menu__itens" href="#">
-                        <i class="icone__explorar icone-item"></i>
-                        <span>Explorar</span></a>
-                </li>
-    
-                <li>
-                    <a class="menu__itens" href="#">
-                        <i class="icone__shorts icone-item"></i>
-                        <span>Shorts</span></a>
-                </li>
-                <li>
-                    <a class="menu__itens" href="#">
-                        <i class="icone__biblioteca icone-item"></i>
-                        <span>Biblioteca</span></a>
-                </li>
-            </ul>
-    
-            <ul class="menu__lista">
-                <li>
-                    <a class="menu__itens" href="#">
-                        <i class="icone__historico icone-item"></i>
-                        <span>Histórico</span></a>
-                </li>
-    
-                <li>
-                    <a class="menu__itens" href="#">
-                        <i class="icone__relogio icone-item"></i>
-                        <span>Cursos</span></a>
-                </li>
-    
-                <li>
-                    <a class="menu__itens" href="#">
-                        <i class="icone__like icone-item"></i>
-                        <span>Marcados com like</span></a>
-                </li>
-            </ul>
-    
-            <ul class="menu__lista">
-                <li>
-                    <a class="menu__itens" href="#">
-                        <i class="icone__mostrar icone-item"></i>
-                        <span>Mostrar mais</span></a>
-                </li>
-                <li>
-                    <a class="menu__itens inscricoes" href="#">NOVOS</a>
-                </li>
-            </ul>
-    
-            <ul class="menu__lista">
-                <li class="jogos">
-                    <a class="menu__itens" href="#">
-                        <i class="icone__jogos icone-item"></i>
-                        <span>Jogos</span></a>
-                </li>
-    
-                
-    
-                <li class="menu__itens">
-                    <a href="#">MAIS DA PÁGINA</a>
-                </li>
-    
-            </ul>
-        </aside>
+            <li>
+                <a class="menu__itens" href="#">
+                    <i class="icone__explorar icone-item"></i>
+                    <span>Explorar</span></a>
+            </li>
 
+            <li>
+                <a class="menu__itens" href="#">
+                    <i class="icone__shorts icone-item"></i>
+                    <span>Shorts</span></a>
+            </li>
+            <li>
+                <a class="menu__itens" href="#">
+                    <i class="icone__biblioteca icone-item"></i>
+                    <span>Biblioteca</span></a>
+            </li>
+        </ul>
+
+        <ul class="menu__lista">
+            <li>
+                <a class="menu__itens" href="#">
+                    <i class="icone__historico icone-item"></i>
+                    <span>Histórico</span></a>
+            </li>
+
+            <li>
+                <a class="menu__itens" href="#">
+                    <i class="icone__relogio icone-item"></i>
+                    <span>Cursos</span></a>
+            </li>
+
+            <li>
+                <a class="menu__itens" href="#">
+                    <i class="icone__like icone-item"></i>
+                    <span>Marcados com like</span></a>
+            </li>
+        </ul>
+
+        <ul class="menu__lista">
+            <li>
+                <a class="menu__itens" href="#">
+                    <i class="icone__mostrar icone-item"></i>
+                    <span>Mostrar mais</span></a>
+            </li>
+            <li>
+                <a class="menu__itens inscricoes" href="#">NOVOS</a>
+            </li>
+        </ul>
+
+        <ul class="menu__lista">
+            <li class="jogos">
+                <a class="menu__itens" href="#">
+                    <i class="icone__jogos icone-item"></i>
+                    <span>Jogos</span></a>
+            </li>
+
+            
+
+            <li class="menu__itens">
+                <a href="#">MAIS DA PÁGINA</a>
+            </li>
+
+        </ul>
+    </aside>
+     
         <section class="superior__secao__container">
             <div class="superior__secao__container-wrapper">
                 <a href="#" name="MySQL" class="superior__item">MySQL</a>
@@ -147,5 +152,11 @@
 
         <script src="/script.js"></script>
 
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <!-- Bootstrap Js CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- jQuery Custom Scroller CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    
 </body>
 </html>

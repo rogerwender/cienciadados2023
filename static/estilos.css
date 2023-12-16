@@ -257,7 +257,7 @@ body {
 .superior__item {
     color: var(--cinza-escuro);
     font-size: 16px;
-    background-color: var(--cinza-claro);
+    background-color: var(--azul-destaque-light);
     border-radius: 20px;
     padding: 8px 20px;
     cursor: pointer;
@@ -335,8 +335,8 @@ iframe{
     /* ESTILOS DA SECAO SUPERIOR */
 
     .superior__secao__container {
-        border-top: var(--azul-medio) 1px solid;
-        border-bottom: var(--azul-medio) 1px solid;
+        border-top: var(--azul-medio) 5px solid;
+        border-bottom: var(--azul-medio) 5px solid;
         width: auto;
         left: 82px;
     }
